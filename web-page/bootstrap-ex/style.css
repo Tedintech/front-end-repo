@@ -1,0 +1,15 @@
+.jumbotron {
+   background: url(https://picsum.photos/1920/300) no-repeat center center / cover;
+}
+.path {
+  background-color: #ccc;
+}
+.path .breadcrumb {
+  background-color: transparent;
+}
+.main-footer {
+  background-color: #000;
+  color: white;
+  padding: 5px 0px;
+  max-width: 1440px;
+}

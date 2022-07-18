@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar" >
+    <nav>
+      <a href="#welcome-page" class="link">關於</a>
+      <a href="#intro-page" class="link">介紹</a>
+      <a href="#contact" class="link">聯絡</a>
+    </nav>
+  </div>
+
+
+
+  
+  <div class="welcome-page" id="welcome-page">
+    <div class="head-img">
+      <img src="https://picsum.photos/300/300" alt="myphoto">
+    </div>
+    <div>
+      <h2>HTML CSS Javascript jQery Bootstrap React</h2>
+      <h2>I'm Ted, </h2>
+      <h2>Nice to meet you !</h2>
+    </div>
+    <div class="wrap">
+      <div class="item">
+        <div class="title"><a class="controller1" href="#">前端技能</a></div>
+        <p class="content1 x">
+          HTML<br>
+          CSS<br>
+          Javascript<br>
+          jQery<br>
+          Boostrapt<br>
+          React<br> 
+          Ajax, API, JSON<br>
+          git<br>
+        </p>
+      </div>
+      <div class="item">
+        <div class="title"><a class="controller2" href="#">轉職前的工作</a></div>
+        <p class="content2 x">
+          大學是學英語專業<br>
+          做過行政櫃檯<br>
+          曾是英文實習老師<br>
+          學過按摩，差一點摩師傅<br>
+          筋膜放鬆教練<br>
+          
+        </p>
+      </div>
+      <div class="item">
+        <div class="title"><a class="controller3" href="#">更了解我</a></div>
+        <p class="content3 x">
+          因緣際會下，接觸到了前端工作，<br>我覺得這是一份很酷的工作，我很享受從無到有完成一份作業的過程，轉行的過程並不輕鬆，但很有趣！<br>我更多的作品放在個人Github!
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+ 
+
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>謝謝你看到了這裡</h2>
+      <p>希望未來有幸與你共事！</p>
+    </div>
+    <div class="contact-links">
+      <a href="https://www.facebook.com/profile.php?id=100000187133336" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i>Facebook</a>
+      <a href="https://github.com/Tedintech" target="_blank" class="btn contact-details"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://twitter.com/Waytochiro" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i>Twitter</a>
+      <a href="phone:0988757464" target="_blank" class="btn contact-details"><i class="fas fa-mobile-alt"></i>Call me</a>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      &copy; copyright Tedintech 2022
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.controller1').click(function(){
+        $('.content1').toggleClass('x');
+      })
+      $('.controller2').click(function(){
+        $('.content2').toggleClass('x');
+      })
+      $('.controller3').click(function(){
+        $('.content3').slideToggle('x');
+      })
+    })
+  </script>
+</body>
+</html>
