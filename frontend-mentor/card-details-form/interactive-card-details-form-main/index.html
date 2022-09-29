@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+
+  <!-- Completed state start -->
+<div class="main-template">
+  <div class="color-bg">
+    
+  </div>
+  <div class="pic-frame">
+    <div class="frontcard">
+      <div class="onchange-items">
+        <p id="front-cardnumber">0000 0000 0000 0000</p>
+        <p id="front-holdername">Jane Apleased</p>
+        <p id="front-expinfo"><span id="exp-month">00</span>/<span id="exp-year">00</span></p>
+      </div>
+      <svg id="frontcard-svg" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+      <img src="/interactive-card-details-form-main/images/bg-card-front.png" alt="card-front" class="front">
+    </div>
+    <div class="backcard">
+      <img src="/interactive-card-details-form-main/images/bg-card-back.png" alt="card-back" class="back">
+    </div>
+  </div>
+  <div class="login-frame">
+    <div class="holder">
+      <h1>cardholder name</h1>
+      <input type="text" placeholder="e.g Jane Apleased" oninput="changeName(this.value)">
+    </div>
+    <p class="notice" id="notice-name" >You haven't fullfiled your name!</p>
+    <div class="card-number">
+      <h1>card number</h1>
+      <input type="text" oninput="changeNumber(this.value)" placeholder="1234 5678 9123 0000">
+    </div>
+    <p class="notice" id="notice-number">You haven't fullfiled your number!</p>
+    <div class="expiration">
+      <h1>exp. date(mm/yy)</h1>
+      <h1 id="cvc">cvc</h1>
+      <div class="exp-input">
+        <input type="text"  placeholder="MM" oninput="changeMonth(this.value)">
+        <input type="text"  placeholder="YY" oninput="changeYear(this.value)">
+        <input type="text"  placeholder="e.g.123" id="cvcinput" oninput="changeExp(this.value)">
+      </div>
+      <div class="notice-exp">
+        <p class="notice" id="notice-date">Can't be blank!</p>
+        <p class="notice" id="second-p">Can't be blank!</p>
+      </div>
+    </div>
+    <button class="btn-confirm" type="button">Confirm</button>
+  </div>
+</div>
+  
+
+
+  
+<script src="index.js"></script>
+</body>
+</html>

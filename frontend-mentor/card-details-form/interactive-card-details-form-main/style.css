@@ -1,0 +1,160 @@
+:root {
+  --clr--primary--red: hsl(0, 100%, 66%);
+  --clr--neutral--white: hsl(0, 0%, 100%);
+  --clr--neutral--light:hsl(270, 3%, 87%);
+  --clr--neutral--dark:hsl(279, 6%, 55%);
+  --clr--neutral--darker:hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+body{
+  background-color: antiquewhite;
+  height: 100vh;
+  width: 100vw;
+}
+button:hover{
+  opacity: 0.8;
+  transition: 0.7s;
+}
+.main-template {
+  position: relative;
+  background-color: white;
+  margin: 5% 5%;
+  width: 1300px;
+  height: 700px;
+  display: flex;
+}
+.color-bg {
+  position: absolute;
+  background-image: url('/interactive-card-details-form-main/images/bg-main-desktop.png');
+  width: 483px;
+  height: 700px;
+  z-index: 3;
+}
+/* pic frame starts */
+.onchange-items{
+  position: absolute;
+  color: var(--clr--neutral--white);
+}
+#front-cardnumber{
+  margin-top: 230px;
+  margin-left: 180px;
+  font-size: 1.6rem;
+}
+#front-holdername{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 180px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#front-expinfo{
+  display: inline-block;
+  padding-left: 80px;
+}
+#frontcard-svg{
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 130px;
+}
+.pic-frame{
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+}
+.front,
+.back{
+  width: 440px;
+  height: 230px;
+}
+.front{
+  margin-top: 110px;
+  margin-left: 100px;
+  padding-bottom: 10px;
+}
+.back{
+  margin-left: 160px;
+}
+/* pic frame ends */
+
+/* login frame starts */
+
+.login-frame{
+  position: absolute;
+  z-index: 4;
+  width: 400px;
+  height: 600px;
+  margin-left: 700px;
+  margin-top: 230px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.holder{
+  padding-bottom: 12px;
+}
+.holder input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: azure;
+}
+.card-number{
+  padding-bottom: 12px;
+}
+.card-number input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: azure;
+}
+.expiration{
+  padding-bottom: 12px;
+}
+#cvc{
+  padding-left: 31px;
+}
+.expiration h1{
+  display: inline-block;
+}
+
+.exp-input input{
+  display: inline-block;
+  width: 90px;
+  padding: 5px;
+  border-radius: 6px;
+}
+#cvcinput{
+  width: 140px;
+}
+h1{
+  color: var(--clr--neutral--darker);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.btn-confirm{
+  letter-spacing: 2px;
+  background-color: var(--clr--neutral--darker);
+  color: var(--clr--neutral--white);
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.notice{
+  color: var(--clr--primary--red);  
+  font-size: 1rem;
+  visibility: hidden;
+}
+.notice-exp{
+  display: flex;
+ 
+}
+#second-p{
+  padding-left: 80px;
+}
