@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="whisky-shopping-site">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whisky Shopping Site</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <h1 class="site">Whisky Shopping</h1>
+    <div class="cart" ><a href="#" >Cart<span class="navCart-total">0</span></a></div>
+  </nav>
+
+  <!-- banner -->
+  <aside class="banner">
+    <img src="image/whisky-banner.avif" alt="">
+  </aside>
+
+  <!-- the cart page: -->
+  <article id="cart-main" class="cart-main hidden">
+    <span id="content-page-close"><i class="fa-solid fa-circle-xmark"></i></span>
+    <h2>Cart Content</h2>
+    <div class="cart-content">
+      <!-- <img class="item-img" src="/image/Glenfiddich15.jpeg" alt="">
+      <div class="item-total">
+        <span class="item-name">Product</span>
+        <span class="item-total">$total</span>
+        <span><a href="#" class="btn-remove">remove</a></span>
+      </div>
+      <div class="amount-controll">
+        <a href="#" class="amount-add"><i class="fa fa-angle-up item-add" aria-hidden="true"></i></a>
+        <span class="item-amount">1</span>
+        <a href="#" class="amount-add"><i class="fa fa-angle-down item-minus" aria-hidden="true"></i></a>
+      </div> -->
+    </div>
+    <h3 class="content-total"></h3>
+    <button class="btn-clear">Clear</button>
+  </article> 
+  
+  <!-- the main page-->
+  <article class="product-main">
+    <!-- <div class="product-content">
+      <div class="img-container">
+        <img class="product-image" src="/image/Gallantry.jpeg" alt="">
+        <button class="add-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+      </div>
+      <h3 class="product-name">Product Name</h3>
+      <span class="product-price">$</span>
+    </div> -->
+  </article>
+
+  
+
+  <!--contentful-->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
