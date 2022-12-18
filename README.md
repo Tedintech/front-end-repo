@@ -1,5 +1,5 @@
 # front-end-repo
-展現我學到的網頁技術
+學習的過程
 ## if your are company HR ..
   and you want to checkout my javascript & html & css , you can see files below:  
   - /mocking-website : a little shopping cart function built by vanilla javascript.  
